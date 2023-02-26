@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="max-w-[1400px] mx-auto font-serif ">
 
       <RouterProvider router={AllRouter}></RouterProvider>
       <Toaster></Toaster>
