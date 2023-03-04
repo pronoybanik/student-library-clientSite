@@ -19,10 +19,11 @@ const Home = () => {
                     console.log(imgData.data.url)
 
                     const postData = {
-                        post: data.post,
+                        userName: data.userName,
                         imgData: imgData.data.url
                     }
-                    console.log(postData)
+
+                   console.log(postData)
                 }
 
 
@@ -36,7 +37,7 @@ const Home = () => {
 
 
             <form onSubmit={handleSubmit(onSubmit)}>
-                <input type="text"  {...register("name", {
+                <input type="text"  {...register("userName", {
                     required: 'text is required',
 
                 })} className="input input-bordered w-full max-w-xs" />
