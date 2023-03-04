@@ -32,6 +32,7 @@ const Home = () => {
     return (
 
         <div>
+            <h1>pronoy </h1>
             <h1 className='uppercase text-3xl font-bold my-10'>You can upload data below</h1>
 
 
