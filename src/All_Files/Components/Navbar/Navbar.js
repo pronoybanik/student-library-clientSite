@@ -7,6 +7,7 @@ const Navbar = () => {
         <Link className='btn btn-ghost btn-sm' to='/'>Home</Link>
         <Link className='btn btn-ghost btn-sm' to='/register'>Register</Link>
         <Link className='btn btn-ghost btn-sm' to='/login'>Login</Link>
+        <Link className='btn btn-ghost btn-sm' to='/dashboard'>DeshBoard</Link>
     </React.Fragment>
 
     return (
