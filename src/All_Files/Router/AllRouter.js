@@ -3,6 +3,8 @@ import Main from "../Layers/Main/Main";
 import Home from "../Pages/Home/Home";
 import Register from "../Pages/Register/Register";
 import Login from "../Pages/Login/Login"
+import DeshBoardMain from "../Layers/DeshBoardLayer/DeshBoardMain";
+import DeshBoardHomePage from "../DeshBoard/DeshBoardHomePage";
 
 
 const AllRouter = createBrowserRouter([
@@ -23,6 +25,20 @@ const AllRouter = createBrowserRouter([
                 element: <Login></Login>
             },
         ]
+    },
+
+    {
+        path: '/dashboard',
+        element: <DeshBoardMain></DeshBoardMain>,
+        children: [
+            {
+                path: '/dashboard',
+                element: <DeshBoardHomePage></DeshBoardHomePage>
+
+            }
+        ]
+
+
     }
 ])
 
