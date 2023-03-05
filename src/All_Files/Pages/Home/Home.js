@@ -33,7 +33,7 @@ const Home = () => {
                     })
                         .then(res => res.json())
                         .then(data => {
-                           toast.success('Successfully Submitted')
+                            toast.success(`Successfully Submitted${data?.name}`)
                         })
                 }
 
