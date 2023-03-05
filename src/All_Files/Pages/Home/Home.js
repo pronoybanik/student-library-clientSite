@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-hot-toast';
 
 const Home = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -23,8 +24,17 @@ const Home = () => {
                         imgData: imgData.data.url
                     }
 
-                    console.log(postData)
-                    
+                    fetch('http://localhost:5000/user', {
+                        method: 'POST',
+                        headers: {
+                            'content-type': 'application/json'
+                        },
+                        body: JSON.stringify(postData)
+                    })
+                        .then(res => res.json())
+                        .then(data => {
+                            toast.success(`Successfully Submitted${data?.name}`)
+                        })
                 }
 
 
