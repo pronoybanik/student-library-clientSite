@@ -10,7 +10,7 @@ const DeshBoardHomePage = () => {
     }, [])
     console.log(data)
     return (
-        <div className='grid grid-cols-2 lg:grid-cols-2'>
+        <div className='grid grid-cols-2 lg:grid-cols-2 md:grid-cols-2'>
            
             {
                 data?.map(da => <div >
