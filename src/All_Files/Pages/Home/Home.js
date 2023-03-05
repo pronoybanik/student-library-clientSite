@@ -23,7 +23,8 @@ const Home = () => {
                         imgData: imgData.data.url
                     }
 
-                   console.log(postData)
+                    console.log(postData)
+                    
                 }
 
 
